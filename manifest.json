@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "PlaySpotifyPlay",
+    "version": "0.0.1",
+    "content_scripts": [{
+      "matches": [
+        "https://open.spotify.com/*"
+      ],
+      "js": ["jquery.min.js", "play.js"]
+    }],
+    "action": {
+      "default_title": "Toggle"
+    },
+    "web_accessible_resources": [],
+    "permissions": [
+      "contextMenus",
+      "storage"
+    ]
+  }
